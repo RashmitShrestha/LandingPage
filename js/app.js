@@ -69,7 +69,7 @@ document.getElementById("sec3").addEventListener("click", function(){
  * Start Helper Functions
  * 
 */
-
+//https://codepen.io/ivanmt07/pen/pxONrw helped a little
 window.addEventListener('scroll', function(ev) {
 //Gotten some help from Stack Overflow
 //for each nav bar - sec1
