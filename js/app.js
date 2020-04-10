@@ -34,6 +34,7 @@ if (w <= 600 && w >= 0) {
   }) 
   
 
+//Gotten some help from Stack Overflow
 
 
 }
@@ -115,41 +116,6 @@ document.getElementById("sec3")
 .classList.remove("active");
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
