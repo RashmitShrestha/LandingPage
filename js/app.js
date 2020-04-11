@@ -27,6 +27,7 @@ var para = document.createElement("ul");
 var element = document.getElementById("navbar__menu");
 element.appendChild(para);
 document.getElementsByTagName("ul")[1].setAttribute("id", "template");
+//make the <ul> element
 
 var para1 = document.createElement("li");
 var element1 = document.getElementById("template");
@@ -41,6 +42,9 @@ var para4 = document.createElement("li");
 element1.appendChild(para2);
 element1.appendChild(para3);
 element1.appendChild(para4);
+//make the 4 <li> elements for each section
+
+
 
 
 //making button section
@@ -55,7 +59,7 @@ document.getElementsByTagName("li")[4].appendChild(button2);
 document.getElementsByTagName("li")[5].appendChild(button3);
 document.getElementsByTagName("li")[6].appendChild(button4);
 
-
+//setting the id and class for the 4 buttons
 document.getElementsByTagName("button")[3].setAttribute("id", "1sec1");
 document.getElementsByTagName("button")[4].setAttribute("id", "1sec2");
 document.getElementsByTagName("button")[5].setAttribute("id", "1sec3");
@@ -65,7 +69,7 @@ document.getElementsByTagName("button")[3].classList.add("first");
 document.getElementsByTagName("button")[4].classList.add("first");
 document.getElementsByTagName("button")[5].classList.add("first");
 document.getElementsByTagName("button")[6].classList.add("first");
-
+//create text for the 4 buttons
 tnode1 = document.createTextNode("Section 1")
 tnode2 = document.createTextNode("Section 2")
 tnode3 = document.createTextNode("Section 3")
@@ -76,26 +80,16 @@ document.getElementsByTagName("button")[4].appendChild(tnode2)
 document.getElementsByTagName("button")[5].appendChild(tnode3)
 document.getElementsByTagName("button")[6].appendChild(tnode4)
 
+//making the website is finished but, I have encountered a 
+//problem in which this block of code above me doesn't work
+//without the unordered list 
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//adds the smooth scroll animation to each component in the navbar
 document.getElementById("1sec1").addEventListener("click", function(){
   document.getElementById("section1").scrollIntoView({ behavior: 'smooth', block: 'center'});
 
@@ -131,13 +125,19 @@ window.addEventListener('scroll', function(ev) {
 //Gotten some help from Stack Overflow
 //for each nav bar - sec1
 
+
+
+
+//this funtion makes the corresponding in the navbar light up with purple
+//when the section is in the viewport
    const secone = document.getElementById('section1');
    const distanceToTopOne = secone.getBoundingClientRect().top;
 if(distanceToTopOne <= 200 && distanceToTopOne >= -178 ) {
-
+//add class active
 document.getElementById("1sec1")
 .classList.add("active");
 } else {
+//or remove class active
 
   document.getElementById("1sec1")
   .classList.remove("active");
@@ -186,9 +186,6 @@ document.getElementById("1sec4")
 .classList.remove("active");
 
 }
-
-
-
 
 
 
